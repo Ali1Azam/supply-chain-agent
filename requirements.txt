@@ -1,0 +1,28 @@
+# --- Core backend ---
+fastapi>=0.115
+uvicorn[standard]>=0.30
+sqlalchemy>=2.0
+pydantic>=2.7
+python-dotenv>=1.0
+
+# --- Data & forecasting ---
+pandas>=2.2
+numpy>=1.26
+prophet>=1.1.5        # primary forecasting engine (falls back to statsmodels if unavailable)
+statsmodels>=0.14      # Holt-Winters fallback engine + used for backtesting
+scikit-learn>=1.4
+
+# --- Agent orchestration ---
+langchain>=0.3
+langchain-core>=0.3
+# Optional, only needed if you set ANTHROPIC_API_KEY / OPENAI_API_KEY for LLM narration:
+# langchain-anthropic>=0.2
+# langchain-openai>=0.2
+
+# --- APIs / dashboard ---
+requests>=2.31
+streamlit>=1.35
+plotly>=5.22
+
+# --- Postgres driver (only needed if DATABASE_URL points to Postgres) ---
+# psycopg2-binary>=2.9

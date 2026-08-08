@@ -1,0 +1,21 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+.Python
+
+# Environment / secrets
+.env
+.streamlit/secrets.toml
+
+# Database (recreated by seed_db.py on each deploy)
+data/*.db
+data/*.db-journal
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

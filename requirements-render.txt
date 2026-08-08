@@ -1,0 +1,25 @@
+# Slimmed-down requirements for free-tier hosting (Render free plan, etc).
+# Prophet/cmdstan is intentionally excluded here -- it needs more build
+# time/RAM than most free tiers give you. forecasting.py detects its
+# absence automatically and falls back to the Holt-Winters (statsmodels)
+# engine, so the app still works fully, just with a different forecasting
+# engine under the hood. For local development, use requirements.txt
+# instead (includes Prophet).
+
+fastapi>=0.115
+uvicorn[standard]>=0.30
+sqlalchemy>=2.0
+pydantic>=2.7
+python-dotenv>=1.0
+
+pandas>=2.2
+numpy>=1.26
+statsmodels>=0.14
+scikit-learn>=1.4
+
+langchain>=0.3
+langchain-core>=0.3
+
+requests>=2.31
+streamlit>=1.35
+plotly>=5.22

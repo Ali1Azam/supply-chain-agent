@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: supply-chain-agent-api
+    runtime: python
+    plan: free
+    buildCommand: "pip install -r requirements-render.txt"
+    startCommand: "python -m scripts.seed_db && uvicorn backend.main:app --host 0.0.0.0 --port $PORT"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
