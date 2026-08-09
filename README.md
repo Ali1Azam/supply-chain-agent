@@ -1,4 +1,7 @@
-# AI-Powered Supply Chain Optimization Agent
+🔗 **Live Demo:** [Dashboard](https://supply-chain-agent-arzjxgcgsikeadee4abcou.streamlit.app/) · [API Docs](https://supply-chain-agent-api-w0nf.onrender.com/docs)
+> Note: both are on free hosting tiers — the API may take 20-30s to wake up if idle.
+
+> # AI-Powered Supply Chain Optimization Agent
 
 An agentic system that monitors inventory, forecasts demand, auto-generates
 purchase orders, flags supply-chain risk, and reports on savings — built for
