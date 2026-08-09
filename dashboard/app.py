@@ -92,7 +92,7 @@ def resolve_risk(risk_id):
 
 
 def run_agent():
-    r = requests.post(f"{API}/agent/run", timeout=120)
+    r = requests.post(f"{API}/agent/run", timeout=280)
     r.raise_for_status()
     return r.json()
 
